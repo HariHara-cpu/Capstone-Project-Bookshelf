@@ -1,0 +1,35 @@
+<%- include("partials/header") %>
+
+<div class="container mt-5">
+  <div class="row">
+    <!-- Left Column: Book Cover + Author Image -->
+    <div class="col-md-3 text-center">
+      <!-- Book Cover -->
+      <% if (book.isbn) { %>
+        <img src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-L.jpg" class="img-fluid rounded shadow mb-3 book-img" alt="Book Cover">
+      <% } else { %>
+        <img src="/images/placeholder.png" class="img-fluid rounded shadow mb-3 book-img" alt="No cover">
+      <% } %>
+
+      <!-- Author Image -->
+      <% if (authorImageUrl) { %>
+        <img src="<%= authorImageUrl %>" class="img-fluid rounded-circle shadow author-img" alt="Author Image">
+      <% } else { %>
+        <img src="/images/placeholder.png" class="img-fluid rounded-circle shadow author-img" alt="No Author Image">
+      <% } %>
+    </div>
+
+    <!-- Right Column: Book Info -->
+    <div class="col-md-9">
+      <h3><%= book.title %></h3>
+      <p><strong>Author:</strong> <%= book.author %></p>
+      <p><strong>Rating:</strong> <%= book.rating %> / 5</p>
+      <hr>
+      <h5>Notes:</h5>
+      <p><%= book.notes %></p>
+    </div>
+  </div>
+</div>
+
+
+<%- include("partials/footer") %>
