@@ -40,4 +40,4 @@ npm install
 
 nodemon index.js
 
-5.Open http://localhost:3000 in your browser.
+5.Open http://localhost:4000 in your browser.
