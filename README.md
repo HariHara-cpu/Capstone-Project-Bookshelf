@@ -43,6 +43,7 @@ nodemon index.js
 5.Open http://localhost:4000 in your browser.
 
 ->ScreenShorts:
+
 <img width="857" height="764" alt="image" src="https://github.com/user-attachments/assets/20edda22-50a8-47f5-aa6e-fd87f7bbe66b" />
 <img width="854" height="741" alt="image" src="https://github.com/user-attachments/assets/549b6ccf-c268-4836-bd3d-755957ebd840" />
 <img width="1293" height="858" alt="image" src="https://github.com/user-attachments/assets/b6827ce3-5104-440f-9653-3b689bfd130c" />
